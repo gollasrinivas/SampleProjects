@@ -1,0 +1,14 @@
+
+li= [1, 0, 4, 0, 1, -1, -1, 0, 0, 1, 0] 
+n = len(li) 
+li1=[]
+li2=[]
+for i in li:
+    if(i>=0):
+        li1.append(i)
+    else:
+        if(len(li1)>len(li2)):
+            li2=li1[0:]
+        li1=[]    
+        
+print(li2)
